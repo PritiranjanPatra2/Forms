@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button[type="reset"] {
+            background-color: #6c757d;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="firstname">Firstname</label>
+            <input type="text" name="firstname" id="firstname">
+            <label for="middlename">Middlename</label>
+            <input type="text" name="middlename" id="middlename">
+            <label for="lastname">Lastname</label>
+            <input type="text" name="lastname" id="lastname">
+            <label for="Course">Course:</label>
+            <select name="Course" id="Course">
+                <option value="cc">Choose Course</option>
+                <option value="bc">BCA</option>
+                <option value="mc">MCA</option>
+                <option value="bs">BSC</option>
+                <option value="bb">BBA</option>
+                <option value="im">IMCA</option>
+            </select>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female
+            <input type="radio" name="gender" id="other">Other
+            <label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <label for="repassword">Re-type Password</label>
+            <input type="password" name="repassword" id="repassword">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">Agree to terms and conditions</label>
+            <br>
+            <label for="fileInput">Choose File</label>
+            <input type="file" id="fileInput" name="fileInput">
+            <label for="colorInput">Choose Color</label>
+            <input type="color" id="colorInput" name="colorInput">
+            <br><br>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
